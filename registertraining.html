@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+	<script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/angularjs/1.5.7/angular.js"></script>
+	<script type="text/javascript" src="register.js"> </script>
+</head>
+<body ng-app="module" ng-controller="registerTraining as rgtTraining">
+	<form ng-submit="rgtTraining.postData()">
+		Training Name: <input type="text" name="" placeholder="Training Name" 
+		ng-model="rgtTraining.inputData.name">
+		<br>
+		Start Date: <input type="date" name="" ng-model="rgtTraining.inputData.startDate">
+		<br>
+		<br>
+		Vacancy: <input type="number" name="" max="60" min="1" ng-model="rgtTraining.inputData.vacancy">
+		<br>
+		Location: <input type="text" name="" placeholder="Location" ng-model="rgtTraining.inputData.location">
+		<br>
+		Start Time: <input type="time" name="" ng-model="rgtTraining.inputData.startTime">
+		<br>
+		End Time: <input type="time" name="" ng-model="rgtTaining.inputData.endTime">
+		<br>
+		Duration(In days): <input type="number" name="" min="1" ng-model="rgtTaining.inputData.duration">
+		<br>
+		Training Executive: <input type="text" name="" placeholder="" ng-model="rgtTaining.inputData.trainingExecutive">
+		<br>
+		Type: <input type="text" name="" placeholder="Technical or Softskill" ng-model="rgtTaining.inputData.type">
+		<br>
+		Trainer Name: <input type="text" name="" placeholder="TrainerName" ng-model="rgtTaining.inputData.trainerName">
+		<br>
+		Nominate: <input type="text" name="" placeholder="emailId or Group" ng-model="rgtTaining.inputData.nominate">
+		<br>
+		Targeted Audience: <input type="text" name="" placeholder="Targeted Audience" ng-model="rgtTaining.inputData.targetedAudience">
+		<br>
+		<input type="submit" vlaue="Add Training">
+	</form>
+	
+</body>
+</html>
