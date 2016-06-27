@@ -11,13 +11,13 @@ myApp.controller('registerTraining', function($scope,$http)
 		encodeURIComponent(this.inputData.startDate);
 		$http(
 				{   method:'POST',
-					url:"http://localhost:9090/springmvchibernate/registerTraining",
+					url:"http://localhost:8080/springmvchibernate/registerTraining",
 					data: encodedString,
 					headers: {'Content-Type' : 'application/x-www-form-urlencoded'}
 				}
 			).success(function(data,status,headers,config) 
 				{
 		 	/*console.log(data);*/
-		 })		
+		 });		
 	}	
 })
