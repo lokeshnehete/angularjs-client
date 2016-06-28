@@ -1,7 +1,23 @@
 <div ng-controller="loginController">
-	<input type="text" placeholder="username" ng-model="tm.login.username">
+    <center>
+	<h3 style="color: grey">Welcome To Training Management System</h3>
+	</center>
 	<br>
-	<input type="password" placeholder="password" ng-model="tm.login.password">
 	<br>
-    <input type="submit" value="login" ng-click="authenticateUser()">
+	<div class="row">
+	<div class="col-md-4"></div>
+	<div class="col-md-4">
+		<br>
+		<input type="text" placeholder="username" class="form-control" autofocus required ng-model="tm.login.username"> 
+		<br>	
+		<input type="password" placeholder="password" class="form-control" required ng-model="tm.login.password">
+		<br>
+		<center style="color:red">{{message}}</center> 
+		<br>
+		<center><input type="submit" value="Sign In" class="btn btn-primary" ng-click="authenticateUser()"></center>
+		<br>
+	</div>
+	</div>
 </div>
+
+
